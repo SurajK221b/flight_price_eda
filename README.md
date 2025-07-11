@@ -29,6 +29,11 @@ flight_price_eda/
 │
 ├── flight_price_eda.ipynb    # Main analysis notebook
 ├── flight_price.xlsx         # Dataset file
+├── Plots/                    # Sample visualization images
+│   ├── Plot01.png           # Data overview and price distribution
+│   ├── Plot02.png           # Categorical features analysis
+│   ├── Plot03.png           # Time-based analysis
+│   └── Plot04.png           # Advanced insights and correlations
 └── README.md                 # This file
 ```
 
@@ -62,6 +67,35 @@ The notebook includes comprehensive data analysis and preprocessing:
   - '2 stops' → 2
   - '3 stops' → 3
   - '4 stops' → 4
+
+### 5. Data Visualizations
+- **Missing values heatmap** - Visual representation of data completeness
+- **Price distribution analysis** - Histograms, boxplots, and statistical summaries
+- **Categorical features analysis** - Pie charts and bar plots for airlines, cities, stops
+- **Time-based patterns** - Hourly, daily, and monthly price trends
+- **Correlation analysis** - Heatmap showing feature relationships
+- **Route analysis** - Most/least expensive flight routes
+- **Advanced insights** - Multi-dimensional analysis and key findings
+
+## Sample Visualizations
+
+Here are some key visualizations from the analysis:
+
+### Data Quality and Price Distribution
+![Plot 1 - Data Overview](./Plots/Plot01.png)
+*Missing values analysis and price distribution patterns*
+
+### Categorical Features Analysis
+![Plot 2 - Categorical Analysis](./Plots/Plot02.png)
+*Distribution of airlines, cities, stops, and their impact on pricing*
+
+### Time-Based Analysis
+![Plot 3 - Time Patterns](./Plots/Plot03.png)
+*Hourly, daily, and monthly pricing trends and flight patterns*
+
+### Advanced Insights
+![Plot 4 - Advanced Analysis](./Plots/Plot04.png)
+*Correlation analysis, route insights, and comprehensive findings*
 
 ## Dependencies
 
@@ -105,12 +139,18 @@ jupyter notebook flight_price_eda.ipynb
 
 ## Key Insights
 
-The analysis reveals important patterns in:
-- Airlines operating in different routes
-- Price variations across different cities
-- Impact of stops on flight pricing
-- Time-based patterns in flight schedules
-- Class-wise price distributions
+The analysis reveals important patterns in flight pricing (see sample visualizations in the `Plots/` folder):
+
+- **Price Distribution**: Wide range of prices with clear patterns and outliers
+- **Airline Competition**: Significant price variations across different airlines
+- **Route Economics**: Certain routes command premium prices while others are budget-friendly
+- **Time-of-Day Effects**: Departure and arrival times impact pricing strategies
+- **Stops Impact**: Direct flights vs connecting flights show distinct pricing patterns
+- **Seasonal Trends**: Monthly and daily variations in flight pricing
+- **Class Segmentation**: Clear price differentiation between Business and Economy
+- **Duration Correlation**: Relationship between flight duration and ticket prices
+
+*Check the visualizations in the `Plots/` folder for detailed graphical insights.*
 
 ## Future Work
 
